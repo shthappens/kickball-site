@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LACKP Teams</title>
+    <link rel="stylesheet" href="app.css">
+  </head>
+
+  <body>
+    <h1>Teams</h1>
+
+    <ul>
+      <% @team_names.each do |team| %>
+      <a href="/teams/<%= team %>">
+        <li><%= team %></li>
+      <% end %>
+    </ul>
+  </body>
+</html>
