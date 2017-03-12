@@ -35,6 +35,6 @@ get "/positions" do
 end
 
 get "/positions/:position" do
-  @players = Player.players_by_position(params[:positions])
+  @players = Player.players_by_position(params[:position])
   erb :players_by_position
 end

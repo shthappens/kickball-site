@@ -13,9 +13,9 @@ class Player
    def self.players_by_position(player_position)
      @players = []
      TeamData::ROLL_CALL.each do |team, players|
-       players.each do |position, player|
+       players.each do |position, name|
          if position.to_s == player_position
-           @players << Player.new(player, position, team)
+           @players << Player.new(name, position, team)
          end
        end
      end

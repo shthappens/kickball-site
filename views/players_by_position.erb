@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="/stylesheets/app.css">
   </head>
   <body>
-    <h1><%= params[:positions] %></h1>
-    <h1>Players by Position</h1>
+    <h1><%= params[:position] %></h1>
     <ul>
       <% @players.each do |player| %>
         <li><%= player.name %>, <%= player.team_name %></li>
